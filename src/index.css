@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Inter", sans-serif;
+    font-weight:500;
+    font-size:14px;
+}
+.search-holder{
+    width:100%;
+    display:flex;
+    align-items:center;
+    height:5rem;
+    justify-content:center;
+}
+input{
+    padding:1em 2em 1em 2em;
+    margin:2em 1em 2em 1em;
+    width:100%;
+}
+button{
+    padding:1em 2em 1em 2em;
+    margin:2em 1em 2em 0;
+    width:auto;
+    background-color:#fff;
+    border:1px solid black;
+    cursor:pointer;
+}
+button:hover{
+    color:#fff;
+    background:#000;
+}
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.3fr 2.4fr 0.3fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    "desc Poster ."
+    ". . ."; 
+}
+.Poster { 
+    grid-area: Poster; 
+}
+.desc{
+    grid-area: desc; 
+    p{
+        font-size:48px;
+    }
+}
+
